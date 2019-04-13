@@ -1,0 +1,1 @@
+function Filesign { Set-AuthenticodeSignature -Certificate $(Get-ChildItem Cert:\LocalMachine\My\_)  -FilePath $args -includeChain All -HashAlgorithm sha256 }

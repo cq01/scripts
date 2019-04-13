@@ -1,0 +1,2 @@
+$Cert = Get-ChildItem Cert:\LocalMachine\My\_
+Set-AuthenticodeSignature -Certificate $Cert -FilePath $args  -includeChain All -timeStampServer http://timestamp.verisign.com/scripts/timstamp.dll -HashAlgorithm sha384
